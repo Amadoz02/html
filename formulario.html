@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="controlador">
+        <div>
+            <label for="edd">ingrese su edad</label>
+            <input values="3" type="number" step="1" min="3" max="20" name="edades" required id="edd">
+        </div>
+
+        <div>
+            <label for="nombres1234">nombre</label>
+            <input type="text" id="nombres1234" name="nombre" required placeholder="ingresa nombre" autofocus autocomplete="off">
+        </div>
+        
+        <div>
+            <label for="colores">seleccione un color</label>
+            <input type="color" id="colores" name="nombre" required >
+        </div>
+        <div>
+            <label for="telefono">ingrese su telefono</label>
+            <input type="text" id="telefono" name="tell" required placeholder="eje: 3121993374" pattern=[0,-9]{1,10}>
+        </div>
+        <div>
+            <label for="correo">ingrese su correo</label>
+            <input type="text" id="correo" name="coreo" required placeholder="ejemplo@gmail.com" pattern=[+@+]{5,50}>
+        </div>
+
+        <button type="submit">enviar</button>
+    </form>
+
+
+            
+
+
+</body>
+</html>
