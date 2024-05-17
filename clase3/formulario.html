@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="controlador" method="get" enctype="multipart/form-data">
+        <div>
+            <label for="edd">ingrese su edad</label>
+            <input values="3" type="number" step="1" min="3" max="20" name="edades" required id="edd">
+        </div>
+
+        <div>
+            <label for="nombres1234">nombre</label>
+            <input type="text" id="nombres1234" name="nombre" required placeholder="ingresa nombre" autofocus autocomplete="on">
+        </div>
+        
+        <div>
+            <label for="colores">seleccione un color</label>
+            <input type="color" id="colores" name="color" required >
+        </div>
+        <div>
+            <label for="telefono">ingrese su telefono</label>
+            <input type="text" id="telefono" name="tell" required placeholder="eje: 3121993374" pattern=[0,-9]{1,10}autocomplete="on">
+        </div>
+        <div>
+            <label for="correo">ingrese su correo</label>
+            <input type="text" id="correo" name="coreo" required placeholder="ejemplo@gmail.com" pattern=[a-zA-Z0-9_+-]+@[a-zA-Z0-9_/.].[a-zA-Z./]{5,25} autocomplete="on">
+        </div>
+        <div>
+            <label for="ciudad">seleccione una ciudad </label>
+            <select name="ciudad" id="ciudad" >
+                <option value="1">giron</option>
+                <option value="2" selected>Bucaramanga</option>
+            </select>
+        </div>
+        <div>
+            <label>
+                <input type="radio" name="genero">mujer
+            </label>
+            <label>
+                <input type="radio" name="genero" checked>hombre
+            </label>
+        </div>
+        </div>
+            <label>
+                <input type="checkbox" name="habilidad">CLI
+            </label>
+            <label>
+                <input type="checkbox" name="habilidad" checked>HTML
+            </label>
+            <label>
+                <input type="checkbox" name="habilidad">GIT
+            </label>
+            <label>
+                <input type="checkbox" name="LENGUAJE">JS
+            </label>
+        </div>
+        <div>
+            <label>
+            <input type="file" accept="image/* .pdf" multiple >seleccione imagenes
+            </label>
+        </div>
+        <button type="submit">enviar</button>
+
+
+    </form>
+
+</select>
+</html>
